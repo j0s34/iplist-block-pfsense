@@ -67,7 +67,7 @@ def fetch_ip(URL, Query, List):
 
 # download instagramparsed
 
-download('https://github.com/j0s34/BlockDomain/blob/main/instagram', 'instagramparsed')
+download('https://raw.githubusercontent.com/j0s34/BlockDomain/main/instagram', 'instagramparsed')
 
 # keep previous ips
 with open('ipv4_list.txt', mode = 'r', encoding = 'utf-8') as f:

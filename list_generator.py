@@ -65,9 +65,9 @@ def fetch_ip(URL, Query, List):
   # append the ips for listing
   List += ips
 
-# download mediumparsed
+# download whatsappparsed
 
-download('https://raw.githubusercontent.com/j0s34/BlockDomain/main/medium', 'mediumparsed')
+download('https://raw.githubusercontent.com/j0s34/BlockDomain/main/whatsapp', 'whatsappparsed')
 
 # keep previous ips
 with open('ipv4_list.txt', mode = 'r', encoding = 'utf-8') as f:
@@ -98,8 +98,8 @@ ipv6List = list( set( ipv6List ) )
 previousIpv4s = len(ipv4List)
 previousIpv6s = len(ipv6List)
 
-# open the mediumparsed file
-with open('mediumparsed', mode = 'r', encoding = 'utf-8') as f:
+# open the whatsappparsed file
+with open('whatsappparsed', mode = 'r', encoding = 'utf-8') as f:
 
   # for each url in the file
   for url in f.readlines():

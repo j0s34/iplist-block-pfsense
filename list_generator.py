@@ -65,9 +65,9 @@ def fetch_ip(URL, Query, List):
   # append the ips for listing
   List += ips
 
-# download instagramparsed
+# download tiktokparsed
 
-download('https://raw.githubusercontent.com/j0s34/BlockDomain/main/instagram', 'instagramparsed')
+download('https://raw.githubusercontent.com/j0s34/BlockDomain/main/tiktok', 'tiktokparsed')
 
 # keep previous ips
 with open('ipv4_list.txt', mode = 'r', encoding = 'utf-8') as f:
@@ -98,8 +98,8 @@ ipv6List = list( set( ipv6List ) )
 previousIpv4s = len(ipv4List)
 previousIpv6s = len(ipv6List)
 
-# open the instagramparsed file
-with open('instagramparsed', mode = 'r', encoding = 'utf-8') as f:
+# open the tiktokparsed file
+with open('tiktokparsed', mode = 'r', encoding = 'utf-8') as f:
 
   # for each url in the file
   for url in f.readlines():

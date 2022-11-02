@@ -65,9 +65,9 @@ def fetch_ip(URL, Query, List):
   # append the ips for listing
   List += ips
 
-# download pinterestparsed
+# download snapchatparsed
 
-download('https://raw.githubusercontent.com/j0s34/BlockDomain/main/pinterest', 'pinterestparsed')
+download('https://raw.githubusercontent.com/j0s34/BlockDomain/main/snapchat', 'snapchatparsed')
 
 # keep previous ips
 with open('ipv4_list.txt', mode = 'r', encoding = 'utf-8') as f:
@@ -98,8 +98,8 @@ ipv6List = list( set( ipv6List ) )
 previousIpv4s = len(ipv4List)
 previousIpv6s = len(ipv6List)
 
-# open the pinterestparsed file
-with open('pinterestparsed', mode = 'r', encoding = 'utf-8') as f:
+# open the snapchatparsed file
+with open('snapchatparsed', mode = 'r', encoding = 'utf-8') as f:
 
   # for each url in the file
   for url in f.readlines():

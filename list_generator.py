@@ -65,8 +65,9 @@ def fetch_ip(URL, Query, List):
   # append the ips for listing
   List += ips
 
-# download youtubeparsed
-download('https://raw.githubusercontent.com/nickspaargaren/no-google/master/categories/youtubeparsed', 'youtubeparsed')
+# download instagramparsed
+
+download('https://github.com/j0s34/BlockDomain/blob/main/instagram', 'instagramparsed')
 
 # keep previous ips
 with open('ipv4_list.txt', mode = 'r', encoding = 'utf-8') as f:
@@ -97,8 +98,8 @@ ipv6List = list( set( ipv6List ) )
 previousIpv4s = len(ipv4List)
 previousIpv6s = len(ipv6List)
 
-# open the youtubeparsed file
-with open('youtubeparsed', mode = 'r', encoding = 'utf-8') as f:
+# open the instagramparsed file
+with open('instagramparsed', mode = 'r', encoding = 'utf-8') as f:
 
   # for each url in the file
   for url in f.readlines():
